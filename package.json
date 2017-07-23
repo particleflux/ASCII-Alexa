@@ -1,0 +1,28 @@
+{
+  "name": "ASCII",
+  "version": "1.0.0",
+  "description": "ASCII skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "test:CI": "codeclimate-test-reporter before-build && nyc mocha && nyc report --reporter=lcov && codeclimate-test-reporter after-build --exit-code $?",
+    "clean": "rm -r dist/*"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "ascii"
+  ],
+  "author": "Stefan Linke",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  },
+  "devDependencies": {
+    "alexa-skill-test-framework": "^1.1.0",
+    "grunt": "^1.0.1",
+    "grunt-aws-lambda": "^0.13.0",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3"
+  }
+}

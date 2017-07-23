@@ -1,0 +1,11 @@
+dist
+event.json
+.gitignore
+Gruntfile.js
+package.json
+.idea
+package-lock.json
+.npmignore
+test
+.nyc_output
+coverage
