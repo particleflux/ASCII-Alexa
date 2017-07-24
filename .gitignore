@@ -2,7 +2,6 @@ node_modules
 .idea
 build
 .nyc_output
-coverage.env
 deploy.env
 .lambda
 .env
