@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
-    "test:CI": "codeclimate-test-reporter before-build && nyc mocha && nyc report --reporter=lcov && codeclimate-test-reporter after-build --exit-code $?",
+    "test:CI": "cc-test-reporter before-build && nyc mocha && nyc report --reporter=lcov && cc-test-reporter after-build --exit-code $?",
     "clean": "rm -r build/ .lambda/",
     "invoke": "node-lambda run"
   },
