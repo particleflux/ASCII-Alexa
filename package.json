@@ -15,7 +15,7 @@
     "ascii"
   ],
   "author": "Stefan Linke",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "alexa-sdk": "^1.0.6"
   },
