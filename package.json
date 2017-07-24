@@ -1,12 +1,13 @@
 {
-  "name": "ASCII",
+  "name": "ASCII-Alexa",
   "version": "1.0.0",
-  "description": "ASCII skill",
+  "description": "Alexa ASCII skill",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
     "test:CI": "codeclimate-test-reporter before-build && nyc mocha && nyc report --reporter=lcov && codeclimate-test-reporter after-build --exit-code $?",
-    "clean": "rm -r dist/*"
+    "clean": "rm -r build/ .lambda/",
+    "invoke": "node-lambda run"
   },
   "keywords": [
     "alexa",
@@ -20,9 +21,8 @@
   },
   "devDependencies": {
     "alexa-skill-test-framework": "^1.1.0",
-    "grunt": "^1.0.1",
-    "grunt-aws-lambda": "^0.13.0",
     "mocha": "^3.4.2",
+    "node-lambda": "^0.11.3",
     "nyc": "^11.0.3"
   }
 }

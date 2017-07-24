@@ -1,5 +1,8 @@
 node_modules
 .idea
-dist
+build
 .nyc_output
-coverage
+coverage.env
+deploy.env
+.lambda
+.env
