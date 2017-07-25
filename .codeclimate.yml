@@ -3,3 +3,8 @@ engines:
     enabled: true
     config:
       config: .eslintrc.yml
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - javascript:
