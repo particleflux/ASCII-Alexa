@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
 
 let handlers = {
     'LaunchRequest': function () {
-        this.emit(':tell', "Entschuldigung, es fehlt ein Buchstabe");
+        this.emit(':tell', 'Entschuldigung, es fehlt ein Buchstabe');
     },
     'ConvertCharIntent': function () {
         this.emit('ConvertChar');
@@ -23,12 +23,12 @@ let handlers = {
         let slotValue = this.event.request.intent.slots.character.value;
         if (!slotValue || !slotValue.length) {
             // error
-            this.emit(':tell', "Entschuldigung, es fehlt ein Buchstabe");
+            this.emit(':tell', 'Entschuldigung, es fehlt ein Buchstabe');
         }
 
         let code = slotValue.charCodeAt(0);
 
-        let output = slotValue[0] + " entspricht ASCII " + code;
+        let output = slotValue[0] + ' entspricht ASCII ' + code;
         this.emit(':tellWithCard', output, SKILL_NAME, output);
     }
 };
