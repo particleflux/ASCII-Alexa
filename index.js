@@ -1,6 +1,6 @@
 'use strict';
 
-const Alexa = require('alexa-sdk');
+const Alexa = require('ask-sdk-v1adapter');
 const APP_ID = 'amzn1.ask.skill.fa724d1b-4759-4065-90de-6e979a74593b';
 const SKILL_NAME = 'ASCII';
 
