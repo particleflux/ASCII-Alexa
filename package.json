@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "alexa-skill-test-framework": "^1.2.4",
-    "mocha": "^7.1.0",
+    "mocha": "^10.2.0",
     "node-lambda": "^0.16.0",
     "nyc": "^15.0.0"
   }
